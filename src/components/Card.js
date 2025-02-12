@@ -5,8 +5,8 @@ import React from "react";
 
 const Card = ({ title, description, imageSrc }) => {
   return (
-    <Box textAlign="left" bg="white">
-      <Image src={imageSrc} />
+    <Box textAlign="left" bg="white" borderRadius="lg">
+      <Image src={imageSrc} borderRadius="lg"/>
       <div style={{ padding: 24 }}>
         <Heading as="h4" size="md" color="black">
           {title}
