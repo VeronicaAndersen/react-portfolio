@@ -5,28 +5,44 @@ import Card from "./Card";
 
 const projects = [
   {
-    title: "React Space",
+    title: "React fetch API",
     description:
-      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
-    getImageSrc: () => require("../images/photo1.jpg"),
+      "A movie search platform that allows users to explore movies by title, fetching real-time data from an external API. Displays movie posters, ratings, and descriptions in an interactive interface.",
+    techstack: "React.js, JavaScript, API, CSS, Vercel",
+      getImageSrc: () => require("../images/MovieLand.jpg"),
+    link: "https://movie-land-by-veronica.vercel.app/",
   },
   {
-    title: "React Infinite Scroll",
+    title: "Javascript",
     description:
-      "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️",
-    getImageSrc: () => require("../images/photo2.jpg"),
+      "A portfolio website displaying various web projects and coding experiments. Showcases frontend and full-stack development skills with interactive UI components.",
+    techstack: "HTML, CSS, JavaScript, GitHub Pages for hosting",
+      getImageSrc: () => require("../images/Portfolio.jpg"),
+    link: "https://veronicaandersen.github.io/",
   },
   {
-    title: "Photo Gallery",
+    title: "React",
     description:
-      "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
-    getImageSrc: () => require("../images/photo3.jpg"),
+      "A simple and efficient to-do list application that helps users manage their daily tasks. Features include adding, editing, and deleting tasks with a clean and user-friendly UI.",
+    techstack: "React.js, JavaScript, CSS, Vercel for deployment",
+      getImageSrc: () => require("../images/Todo.jpg"),
+    link: "https://todolist-by-veronica.vercel.app/",
   },
   {
-    title: "Event planner",
+    title: "WordPress",
     description:
-      "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
-    getImageSrc: () => require("../images/photo4.jpg"),
+      "A professional business website designed to provide a seamless user experience while showcasing the brand’s services. Features responsive design and optimized performance.",
+    techstack: "WordPress, CSS",
+      getImageSrc: () => require("../images/Refold.jpg"),
+    link: "https://refold.se/",
+  },
+  {
+    title: "Javascript",
+    description:
+      "A professionally designed website for a fictional landscaping and gardening business, featuring a clean and modern layout. The site highlights services, company details, and contact options while ensuring a smooth and accessible user experience.",
+    techstack: "JavaScript, Tailwind CSS, Vercel for deployment",
+      getImageSrc: () => require("../images/LuckyShrub.jpg"),
+    link: "https://luckyshrub-flame.vercel.app/",
   },
 ];
 
@@ -44,7 +60,7 @@ const ProjectsSection = () => {
       </Heading>
       <Box
         display="grid"
-        gridTemplateColumns="repeat(2,minmax(0,1fr))"
+        gridTemplateColumns="repeat(3,minmax(0,1fr))"
         gridGap={8}
       >
         {projects.map((project) => (
@@ -52,7 +68,9 @@ const ProjectsSection = () => {
             key={project.title}
             title={project.title}
             description={project.description}
+            techstack={project.techstack}
             imageSrc={project.getImageSrc()}
+            link={project.link}
           />
         ))}
       </Box>

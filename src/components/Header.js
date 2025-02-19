@@ -12,24 +12,16 @@ import { Box, HStack } from "@chakra-ui/react";
 const socials = [
   {
     icon: faEnvelope,
-    url: "mailto: hello@example.com",
+    url: "mailto: v.e.andersen@gmail.com",
   },
   {
     icon: faGithub,
-    url: "https://github.com",
+    url: "https://github.com/VeronicaAndersen",
   },
   {
     icon: faLinkedin,
-    url: "https://www.linkedin.com",
-  },
-  {
-    icon: faMedium,
-    url: "https://medium.com",
-  },
-  {
-    icon: faStackOverflow,
-    url: "https://stackoverflow.com",
-  },
+    url: "https://www.linkedin.com/in/andersenveronica/",
+  }
 ];
 
 const Header = () => {
@@ -94,6 +86,9 @@ const Header = () => {
           </nav>
           <nav>
             <HStack spacing={8}>
+              <a href="#about" onClick={handleClick("about")}>
+                About
+              </a> 
               <a href="#projects" onClick={handleClick("projects")}>
                 Projects
               </a>
