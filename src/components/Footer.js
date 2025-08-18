@@ -1,23 +1,12 @@
-import React from "react";
-import {Box, Flex} from "@chakra-ui/react";
-
 const Footer = () => {
   return (
-    <Box backgroundColor="#18181b">
+    <div className="bg-zinc-900">
       <footer>
-        <Flex
-          margin="0 auto"
-          px={12}
-          color="white"
-          justifyContent="center"
-          alignItems="center"
-          maxWidth="1024px"
-          height={16}
-        >
+        <div className="mx-auto px-12 text-white flex justify-center items-center max-w-screen-lg h-16 block">
           <p>ByVeronica • © 2025</p>
-        </Flex>
+        </div>
       </footer>
-    </Box>
+    </div>
   );
 };
 export default Footer;

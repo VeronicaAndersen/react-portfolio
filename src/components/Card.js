@@ -1,28 +1,34 @@
-import { Heading, Image, Text, Link, Box } from "@chakra-ui/react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import React from "react";
 
 const Card = ({ title, description, techstack, imageSrc, link }) => {
   return (
-    <Box textAlign="left" bg="white" borderRadius="lg">
-      <Image src={imageSrc} borderRadius="lg" />
-      <div style={{ padding: 24 }}>
-        <Heading as="h4" size="md" color="black">
-          {title}
-        </Heading>
-        <Text color="black" py="2">{description}</Text>
-        <Text color="black" py="2"><b>Tech Stack:</b> {techstack}</Text>
-        <Text color="black" fontSize="sm">
-          <Link
-            variant="underline"
+    <div className="text-left bg-white rounded-2xl shadow-md overflow-hidden my-2">
+      <img
+        src={imageSrc}
+        alt={title}
+        className="w-full rounded-t-2xl block"
+      />
+      <div className="p-4">
+        <h2 className="text-2xl text-black mb-2 font-semibold">{title}</h2>
+        <p className="text-base text-black mb-2">{description}</p>
+        <p className="text-base text-black mb-2">
+          <span className="font-bold">Tech Stack:</span> {techstack}
+        </p>
+        <div className="flex items-center">
+          <a
             href={link}
-            target="_blank"> Explore site 
-          </Link>
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#60958f] underline text-base mr-2"
+          >
+            Explore site
+          </a>
           <FontAwesomeIcon icon={faArrowRight} size="1x" />
-        </Text>
+        </div>
       </div>
-    </Box>
+    </div>
   );
 };
 

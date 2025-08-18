@@ -1,18 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faLinkedin,
-  faMedium,
-  faStackOverflow,
-} from "@fortawesome/free-brands-svg-icons";
-import { Box, HStack } from "@chakra-ui/react";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const socials = [
   {
     icon: faEnvelope,
-    url: "mailto: v.e.andersen@gmail.com",
+    url: "mailto:v.e.andersen@gmail.com",
   },
   {
     icon: faGithub,
@@ -21,7 +15,7 @@ const socials = [
   {
     icon: faLinkedin,
     url: "https://www.linkedin.com/in/andersenveronica/",
-  }
+  },
 ];
 
 const Header = () => {
@@ -35,71 +29,48 @@ const Header = () => {
       });
     }
   };
-  
-  const [showHeader, setShowHeader] = useState(true);
 
   const prevScrollPos = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
-      const isScrollingUp = prevScrollPos.current > currentScrollPos;
-
-      setShowHeader(isScrollingUp);
 
       prevScrollPos.current = currentScrollPos;
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  
+
   return (
-    <Box
-      position="fixed"
-      top={0}
-      left={0}
-      right={0}
-      translateY={0}
-      transform={showHeader ? "translateY(0)" : "translateY(-200px)"}
-      transitionProperty={showHeader ? "translateY(0)" : "translateY(-200px)"}
-      transitionDuration=".3s"
-      transitionTimingFunction="ease-in-out"
-      backgroundColor="#18181b"
+    <div
+      className="fixed top-0 left-0 right-0 z-50 transition-transform duration-300 bg-zinc-900"
     >
-      <Box color="white" maxWidth="1280px" margin="0 auto">
-        <HStack
-          px={16}
-          py={4}
-          justifyContent="space-between"
-          alignItems="center"
-        >
-          <nav>
-            <HStack spacing={8}>
-              {
-                socials.map((social, index) => <a href={social?.url} target="_blank" key={index}><FontAwesomeIcon icon={social.icon} size="2x" /></a>)
-              }
-            </HStack>
-          </nav>
-          <nav>
-            <HStack spacing={8}>
-              <a href="#about" onClick={handleClick("about")}>
-                About
-              </a> 
-              <a href="#projects" onClick={handleClick("projects")}>
-                Projects
-              </a>
-              <a href="#contactme" onClick={handleClick("contactme")}>
-                Contact Me
-              </a> 
-            </HStack>
-          </nav>
-        </HStack>
-      </Box>
-    </Box>
+      <div
+        className="flex justify-between items-center p-2"
+      >
+        <nav className="flex gap-8">
+          {socials.map((social, index) => (
+            <a href={social.url} target="_blank" rel="noreferrer" key={index}>
+              <FontAwesomeIcon icon={social.icon} size="2x" color="#fff"/>
+            </a>
+          ))}
+        </nav>
+        <nav className="flex gap-8">
+          <a href="#about" onClick={handleClick("about")}>
+            Om mig
+          </a>
+          <a href="#projects" onClick={handleClick("projects")}>
+            Portfolio
+          </a>
+          <a href="#timeline" onClick={handleClick("timeline")}>
+            Tidslinje
+          </a>
+        </nav>
+      </div>
+    </div>
   );
 };
+
 export default Header;

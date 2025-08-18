@@ -16,14 +16,6 @@ Before proceeding further, let's provide an introduction to the libraries you wi
 
 ### Libraries
 
-#### Chakra UI
-
-Chakra UI comes pre-configured with this lab, so you don't have to worry about installing it or setting it up.
-
-The components from this library you will need to use are already imported from the `@chakra-ui/react` package at the top of each corresponding file.
-If you don't see a component already imported, it's because you probably won't need it.
-In any case, feel free to check their official [documentation](https://chakra-ui.com/docs/components) to see all the components at your disposal and their corresponding props.
-
 #### Formik and Yup
 
 The Formik library is already set up in the project as well, so no extra configuration is needed.
