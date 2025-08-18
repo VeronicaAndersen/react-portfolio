@@ -1,4 +1,3 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -21,11 +20,11 @@ const Card = ({ title, description, techstack, imageSrc, link }) => {
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#60958f] underline text-base mr-2"
+            className="text-[#60958f] underline text-base mr-2 hover:text-[#4f7a72] transition-colors"
           >
             Explore site
+            <FontAwesomeIcon icon={faArrowRight} size="1x" color="#60958f" className="mx-2"/>
           </a>
-          <FontAwesomeIcon icon={faArrowRight} size="1x" />
         </div>
       </div>
     </div>

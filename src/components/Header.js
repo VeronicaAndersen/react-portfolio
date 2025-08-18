@@ -45,7 +45,7 @@ const Header = () => {
 
   return (
     <div
-      className="fixed top-0 left-0 right-0 z-50 transition-transform duration-300 bg-zinc-900"
+      className="fixed top-0 left-0 right-0 z-50 transition-transform duration-300 bg-zinc-900 h-16"
     >
       <div
         className="flex justify-between items-center p-2"

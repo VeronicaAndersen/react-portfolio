@@ -14,17 +14,7 @@ const timelineData = [
         ],
       },
       {
-        title: "Systemutvecklarkonsult — Syncify AB",
-        location: "Göteborg",
-        date: "Sep 2022 – Jun 2023",
-        description: [
-          "Utvecklade anpassade e-handelsfunktioner och adminpaneler (C#/.NET, JS, Kendo UI).",
-          "Ledde projektplanering, backlog grooming och sprint retrospektiv.",
-          "Förbättrade sidladdningstider med 30% och löste produktionsbuggar.",
-        ],
-      },
-      {
-        title: "Software Engineer — Volvo Digital & IT AB",
+        title: "Software Engineer konsult via Experis AB — Volvo Digital & IT AB",
         location: "Skövde",
         date: "Aug 2023 – Jan 2025",
         description: [
@@ -32,6 +22,16 @@ const timelineData = [
           "Byggde webbapplikationer med C#, HTML och MS SQL.",
           "Använde Azure DevOps, Git & TFVC för CI/CD.",
           "Arbetade agilt (Scrum & Kanban) med TDD.",
+        ],
+      },
+      {
+        title: "System Developer konsult via Experis AB — Syncify AB",
+        location: "Göteborg",
+        date: "Sep 2022 – Jun 2023",
+        description: [
+          "Utvecklade anpassade e-handelsfunktioner och adminpaneler (C#/.NET, JS, Kendo UI).",
+          "Ledde projektplanering, backlog grooming och sprint retrospektiv.",
+          "Förbättrade sidladdningstider med 30% och löste produktionsbuggar.",
         ],
       },
     ],
@@ -93,7 +93,7 @@ const timelineData = [
 
 const Timeline = () => {
   return (
-    <div id="timeline" className="max-w-4xl mx-auto px-4 py-12">
+    <div id="timeline" className="max-w-4xl mx-auto px-4 py-12 h-fit">
       {timelineData.map((section, sectionIdx) => (
         <div key={sectionIdx} className="mb-12">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">

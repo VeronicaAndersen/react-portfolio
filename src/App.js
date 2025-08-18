@@ -10,16 +10,16 @@ function App() {
     <main className="bg-neutral-100 text-black">
       <Header />
       <div className="h-screen overflow-y-scroll snap-y snap-mandatory">
-        <section className="snap-start h-screen bg-[#60958f]">
+        <section className="snap-start h-[calc(100vh-4rem)] bg-[#60958f]">
           <LandingSection />
         </section>
-        <section className="snap-start h-screen bg-white">
+        <section className="snap-start h-[calc(100vh-4rem)] bg-white">
           <About />
         </section>
-        <section className="snap-start min-h-screen bg-[#60958f]">
+        <section className="snap-start lg:h-[calc(100vh-4rem)] bg-[#60958f]">
           <ProjectsSection />
         </section>
-        <section className="snap-start min-h-screen bg-white">
+        <section className="snap-start  bg-white">
           <Timeline />
         </section>
       </div>

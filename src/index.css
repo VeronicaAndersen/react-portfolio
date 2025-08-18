@@ -28,7 +28,7 @@ a{
 
 /* Scroll container */
 .scroll-container {
-  height: 100vh;
+  height: 100vh; 
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -36,7 +36,7 @@ a{
 
 /* Each full-page section */
 .scroll-section {
-  height: 100vh; /* Adjust for header height */
+  height: 100vh; 
   scroll-snap-align: start;
   display: flex;
   align-items: center;
