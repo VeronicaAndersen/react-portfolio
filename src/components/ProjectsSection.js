@@ -2,7 +2,15 @@ import Card from "./Card";
 
 const projects = [
   {
-    title: "React fetch API",
+    title: "Next.JS",
+    description:
+      "A web application that visualizes global cough data in real-time, providing insights into respiratory health trends. Users can explore data through interactive maps and charts, contributing to public health awareness.",
+    techstack: "Next.js, TypeScript, API, Tailwind",
+    getImageSrc: () => require("../images/CoughRadar.png"),
+    link: "https://sleepcycle.com/coughradar",
+  },
+  {
+    title: "React.JS fetch API",
     description:
       "A movie search platform that allows users to explore movies by title, fetching real-time data from an external API. Displays movie posters, ratings, and descriptions in an interactive interface.",
     techstack: "React.js, JavaScript, API, CSS, Vercel",
@@ -18,7 +26,7 @@ const projects = [
     link: "https://veronicaandersen.github.io/",
   },
   {
-    title: "React",
+    title: "React.JS",
     description:
       "A simple and efficient to-do list application that helps users manage their daily tasks. Features include adding, editing, and deleting tasks with a clean and user-friendly UI.",
     techstack: "React.js, JavaScript, CSS, Vercel for deployment",

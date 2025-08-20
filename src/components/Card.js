@@ -11,8 +11,8 @@ const Card = ({ title, description, techstack, imageSrc, link }) => {
       />
       <div className="p-4">
         <h2 className="text-2xl text-black mb-2 font-semibold">{title}</h2>
-        <p className="text-base text-black mb-2">{description}</p>
-        <p className="text-base text-black mb-2">
+        <p className="text-sm text-black mb-2">{description}</p>
+        <p className="text-sm text-black mb-2">
           <span className="font-bold">Tech Stack:</span> {techstack}
         </p>
         <div className="flex items-center">
@@ -20,7 +20,7 @@ const Card = ({ title, description, techstack, imageSrc, link }) => {
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#60958f] underline text-base mr-2 hover:text-[#4f7a72] transition-colors"
+            className="text-[#60958f] underline text-sm mr-2 hover:text-[#4f7a72] transition-colors"
           >
             Explore site
             <FontAwesomeIcon icon={faArrowRight} size="1x" color="#60958f" className="mx-2"/>

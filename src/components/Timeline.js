@@ -93,7 +93,7 @@ const timelineData = [
 
 const Timeline = () => {
   return (
-    <div id="timeline" className="max-w-4xl mx-auto px-4 py-12 h-fit">
+    <div id="timeline" className="max-w-4xl mx-auto p-4 h-fit">
       {timelineData.map((section, sectionIdx) => (
         <div key={sectionIdx} className="mb-12">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">
