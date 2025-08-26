@@ -12,14 +12,15 @@ const LandingSection = () => {
   return (
     <div className="h-screen flex flex-col justify-center items-center text-center px-6">
       <h1 className="text-5xl font-bold text-white mb-4">
-        Hej, jag heter Veronica
+        Hej, Veronica här!
       </h1>
       <h2 className="text-2xl text-white mb-6">
         Frontend Developer | System Developer | Full-Stack Web Engineer
       </h2>
       <p className="max-w-2xl text-white mb-8">
-        Jag bygger responsiva och användarvänliga webbupplevelser. 
-        Med fokus på design, prestanda och tillgänglighet skapar jag lösningar som gör skillnad.
+       Jag utvecklar responsiva och användarvänliga webbupplevelser med fokus på design, prestanda och tillgänglighet. 
+       Jag är resultatorienterad och strävar efter att leverera lösningar av hög kvalitet. 
+       Genom att vara öppen för feedback och kontinuerligt vidareutveckla min kompetens säkerställer jag att jag kan bidra med både tekniskt kunnande och långsiktig förbättring.
       </p>
       <div className="flex gap-4">
         <a
