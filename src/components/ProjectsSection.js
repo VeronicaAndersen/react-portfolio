@@ -4,7 +4,7 @@ const projects = [
   {
     title: "Next.JS",
     description:
-      "A web application that visualizes global cough data in real-time, providing insights into respiratory health trends. Users can explore data through interactive maps and charts, contributing to public health awareness.",
+      "En webbapplikation som visualiserar global hostdata i realtid och ger insikter i trender inom andningsvägarnas hälsa. Användare kan utforska data genom interaktiva kartor och diagram, vilket bidrar till folkhälsomedvetenhet.",
     techstack: "Next.js, TypeScript, API, Tailwind",
     getImageSrc: () => require("../images/CoughRadar.png"),
     link: "https://sleepcycle.com/coughradar",
@@ -12,7 +12,7 @@ const projects = [
   {
     title: "React.JS fetch API",
     description:
-      "A movie search platform that allows users to explore movies by title, fetching real-time data from an external API. Displays movie posters, ratings, and descriptions in an interactive interface.",
+      "En plattform för filmsökning som låter användare utforska filmer efter titel och hämta realtidsdata från ett externt API. Visar filmaffischer, betyg och beskrivningar i ett interaktivt gränssnitt.",
     techstack: "React.js, JavaScript, API, CSS, Vercel",
       getImageSrc: () => require("../images/MovieLand.jpg"),
     link: "https://movie-land-by-veronica.vercel.app/",
@@ -20,7 +20,7 @@ const projects = [
   {
     title: "Javascript",
     description:
-      "A portfolio website displaying various web projects and coding experiments. Showcases frontend and full-stack development skills with interactive UI components.",
+      "En portfoliowebbplats som visar olika webbprojekt och kodningsexperiment. Visar upp färdigheter inom frontend- och fullstack-utveckling med interaktiva UI-komponenter.",
     techstack: "HTML, CSS, JavaScript, GitHub Pages for hosting",
       getImageSrc: () => require("../images/Portfolio.jpg"),
     link: "https://veronicaandersen.github.io/",
@@ -36,7 +36,7 @@ const projects = [
   {
     title: "WordPress",
     description:
-      "A professional business website designed to provide a seamless user experience while showcasing the brand’s services. Features responsive design and optimized performance.",
+      "En enkel och effektiv att-göra-listapplikation som hjälper användare att hantera sina dagliga uppgifter. Funktionerna inkluderar att lägga till, redigera och ta bort uppgifter med ett rent och användarvänligt gränssnitt.",
     techstack: "WordPress, CSS",
       getImageSrc: () => require("../images/Refold.jpg"),
     link: "https://refold.se/",
@@ -44,7 +44,7 @@ const projects = [
   {
     title: "Javascript",
     description:
-      "A professionally designed website for a fictional landscaping and gardening business, featuring a clean and modern layout. The site highlights services, company details, and contact options while ensuring a smooth and accessible user experience.",
+      "En professionellt utformad webbplats för ett fiktivt landskaps- och trädgårdsföretag, med en ren och modern layout. Webbplatsen lyfter fram tjänster, företagsinformation och kontaktalternativ samtidigt som den säkerställer en smidig och tillgänglig användarupplevelse.",
     techstack: "JavaScript, Tailwind CSS, Vercel for deployment",
       getImageSrc: () => require("../images/LuckyShrub.jpg"),
     link: "https://luckyshrub-flame.vercel.app/",

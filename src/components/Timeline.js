@@ -5,91 +5,76 @@ const timelineData = [
       {
         title: "Full-Stack Web Engineer — Sleep Cycle AB",
         location: "Göteborg",
-        date: "Apr 2025 – Jul 2025",
+        date: "2025 – 2025",
         description: [
           "Utvecklade responsiva webbsidor för annonsering och affiliatekampanjer (+40% engagemang).",
           "Integrerade backend-funktioner med Next.js, Python och PHP.",
           "Implementerade spårningsintegrationer med Google Analytics.",
-          "Samarbetade tvärfunktionellt med Figma, marknadsföring och ingenjörsteam.",
+          "Samarbetade tvärfunktionellt med design, marknadsföring och ingenjörsteam.",
         ],
+        tech: ["Next.js", "React", "Python", "PHP", "Google Analytics", "Node.js", "Tailwind CSS", "Figma", "HTML", "CSS", "TypeScript"],
+        softSkills: [
+          "Tvärfunktionellt samarbete",
+          "Tydlig kommunikation",
+          "Kreativ problemlösning",
+          "Anpassningsförmåga"
+        ]
       },
       {
         title: "Software Engineer konsult via Experis AB — Volvo Digital & IT AB",
         location: "Skövde",
-        date: "Aug 2023 – Jan 2025",
+        date: "2023 – 2025",
         description: [
           "Moderniserade legacy-appar till React och Blazor.",
           "Byggde webbapplikationer med C#, HTML och MS SQL.",
           "Använde Azure DevOps, Git & TFVC för CI/CD.",
           "Arbetade agilt (Scrum & Kanban) med TDD.",
         ],
+        tech: ["C#", ".NET", "Blazor", "React", "Azure DevOps", "Git", "TFVC", "TDD", "Node.js", "SQL", "HTML", "CSS", "JavaScript", "JUnit", "Integration Testing"],
+        softSkills: [
+          "Agilt arbetssätt (Scrum & Kanban)",
+          "Kvalitetsmedvetenhet (TDD, CI/CD)",
+          "Analytiskt tänkande",
+          "Samarbete i distribuerade team"
+        ]
       },
       {
         title: "System Developer konsult via Experis AB — Syncify AB",
         location: "Göteborg",
-        date: "Sep 2022 – Jun 2023",
+        date: "2022 – 2023",
         description: [
-          "Utvecklade anpassade e-handelsfunktioner och adminpaneler (C#/.NET, JS, Kendo UI).",
-          "Ledde projektplanering, backlog grooming och sprint retrospektiv.",
+          "Utvecklade anpassade e-handelsfunktioner och administrörsgränssnitt för Telia.",
+          "Ledde projektplanering, backlog och sprintar.",
           "Förbättrade sidladdningstider med 30% och löste produktionsbuggar.",
         ],
-      },
-    ],
-  },
-  {
-    category: "Utbildning",
-    items: [
-      {
-        title: "Experis Academy",
-        location: "Göteborg",
-        date: "Jul 2022 – Sep 2022",
-        description: [
-          "12-veckors intensivt Javaprogram.",
-          "Fokus på OOP, JUnit, mjukvaruarkitektur, React & Angular.",
-        ],
+        tech: ["C#", ".NET", "JavaScript", "Kendo UI", "Agilt", "Scrum"],
+        softSkills: [
+          "Projektledning & backloghantering",
+          "Kravanalys & behovsfångst",
+          "Kommunikation med kund & team",
+          "Resultatorienterad problemlösning"
+        ]
       },
       {
-        title: "Högskolan i Skövde",
-        location: "Skövde",
-        date: "Aug 2018 – Jun 2021",
-        description: [
-          "Kandidatexamen i webbutveckling.",
-          "Fokus på HTML, JS, PHP, UX, databasintegration och säkerhet.",
-        ],
-      },
-      {
-        title: "Alströmergymnasiet",
+        title: "Support Tekniker — Iver AB",
         location: "Alingsås",
-        date: "Aug 2014 – Jun 2017",
+        date: "2021 – 2022",
         description: [
-          "Teknikprogrammet med inriktning design & produktutveckling.",
-          "Arbete med Figma, Adobe Suite, CAD & prototyptillverkning.",
+          "Säkerställde IT-systemstabilitet och drift för kunder, stöttade små och medelstora företag genom att installera och driftsätta Windows Servrar och Microsoft-tjänster.",
+          "Utförde felsökning och underhåll, hanterade uppgraderingar och migreringar till Microsoft 365, optimerade effektiviteten och minimerade driftstopp genom fjärrsupport."
         ],
+        tech: ["Windows Server", "Microsoft 365", "Active Directory", "Azure AD"],
+        softSkills: [
+          "Kundservice & relationsbyggande",
+          "Strukturerad felsökning",
+          "Tidshantering & prioritering",
+          "Tålamod & pedagogisk support"
+        ]
       },
     ],
   },
-  {
-    category: "Certifieringar",
-    items: [
-      {
-        title: "Meta Front-End Developer – Coursera",
-        date: "Mar 2025",
-        description: [
-          "9-kursersprogram: HTML, CSS, JS, React.",
-          "UI/UX, Git, GitHub, Bootstrap, Jest, portföljprojekt.",
-        ],
-      },
-      {
-        title: "Introduktion till Python – Coursera",
-        date: "Mar 2025",
-        description: [
-          "Lärde mig variabler, loopar, villkor och skriptning.",
-          "Tillämpade beräknande tänkande & programmeringsprinciper.",
-        ],
-      },
-    ],
-  },
-];
+]
+
 
 const Timeline = () => {
   return (
@@ -116,6 +101,20 @@ const Timeline = () => {
                   {item.description.map((desc, i) => (
                     <li key={i}>{desc}</li>
                   ))}
+                  {
+                    item.tech && (
+                      <p className="mt-2 text-base text-gray-900">
+                        <strong>Teknologier:</strong> <em>{item.tech.join(", ")}</em>
+                      </p>
+                    )
+                  }
+                  {
+                    item.softSkills && (
+                      <p className="mt-1 text-base text-gray-900">
+                        <strong>Mjuka färdigheter:</strong> <em>{item.softSkills.join(", ")}</em>
+                      </p>
+                    )
+                  }
                 </ul>
               </div>
             ))}
