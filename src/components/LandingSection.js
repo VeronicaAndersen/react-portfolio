@@ -11,6 +11,11 @@ const LandingSection = () => {
   };
   return (
     <div className="h-screen flex flex-col justify-center items-center text-center px-6">
+      <img
+        src={require("../images/Veronica.PNG")}
+        alt="Veronica Andersen"
+        className="w-40 h-40 rounded-full mb-6 object-cover"
+      />
       <h1 className="text-5xl font-bold text-white mb-4">
         Hej, Veronica här!
       </h1>

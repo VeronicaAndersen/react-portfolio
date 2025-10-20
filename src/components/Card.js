@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-const Card = ({ title, description, techstack, imageSrc, link }) => {
+const Card = ({ title, description, techstack, imageSrc, link, githubLinkFE, githubLinkBE }) => {
   return (
     <div className="text-left bg-white rounded-2xl shadow-md overflow-hidden my-2">
       <img
@@ -22,10 +23,34 @@ const Card = ({ title, description, techstack, imageSrc, link }) => {
             rel="noopener noreferrer"
             className="text-[#60958f] underline text-sm mr-2 hover:text-[#4f7a72] transition-colors"
           >
-            Utforska projektet
+            Utforska sida
             <FontAwesomeIcon icon={faArrowRight} size="1x" color="#60958f" className="mx-2"/>
           </a>
         </div>
+        {githubLinkFE && (
+          <div className="flex items-center">
+          <a
+            href={githubLinkFE}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#60958f] underline text-sm mr-2 hover:text-[#4f7a72] transition-colors"
+          >
+            Frontend repo
+            <FontAwesomeIcon icon={faGithub} size="1x" color="#60958f" className="mx-2" />
+          </a>
+        </div>
+        )}
+        {githubLinkBE && (
+          <a
+            href={githubLinkBE}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#60958f] underline text-sm mr-2 hover:text-[#4f7a72] transition-colors"
+          >
+            Backend repo
+            <FontAwesomeIcon icon={faGithub} size="1x" color="#60958f" className="mx-2" />
+          </a>
+        ) }
       </div>
     </div>
   );
