@@ -10,7 +10,7 @@ const LandingSection = () => {
     }
   };
   return (
-    <div className="h-screen flex flex-col justify-center items-center text-center px-6">
+    <div className="h-screen flex flex-col justify-center items-center text-center px-6" id="landing">
       <img
         src={require("../images/Veronica.PNG")}
         alt="Veronica Andersen"

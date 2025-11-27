@@ -58,13 +58,13 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <div className="p-2 flex flex-col items-center justify-center min-h-screen bg-[#60958f] text-white">
+    <div className="p-2 flex flex-col items-center justify-center min-h-screen bg-[#60958f] text-white text-center px-6">
       <h1 
         id="projects-section"
         className="text-4xl font-bold mb-6 text-center">
         Portfolio
       </h1>
-      <div className="grid grid-cols-[repeat(auto-fit,_minmax(260px,_1fr))] gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto p-4 max-w-screen-smd md:max-w-screen-md lg:max-w-screen-lg">
         {projects.map((project, index) => (
           <Card
             key={index}
@@ -75,7 +75,7 @@ const ProjectsSection = () => {
             link={project.link}
             githubLinkFE={project.githubLinkFE}
             githubLinkBE={project.githubLinkBE}
-            className="bg-white shadow-lg rounded-lg p-4 hover:shadow-xl transition-shadow duration-300"
+            className="bg-white shadow-lg rounded-lg p-4 hover:shadow-xl transition-shadow duration-300 max-h-fit"
           />
         ))}
       </div>

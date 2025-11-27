@@ -7,7 +7,7 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 const socials = [
   {
     icon: faEnvelope,
-    url: "mailto:v.e.andersen@gmail.com",
+    url: "mailto:veronica.e.andersen@gmail.com",
   },
   {
     icon: faGithub,
@@ -30,7 +30,7 @@ const Header = () => {
         behavior: "smooth",
         block: "start",
       });
-      setMenuOpen(false); // Stäng menyn efter klick
+      setMenuOpen(false);
     }
   };
 
@@ -59,6 +59,7 @@ const Header = () => {
         </nav>
 
         <nav className="hidden md:flex gap-8 text-white">
+          <a href="#landing" onClick={handleClick("landing")}>Hem</a>
           <a href="#about" onClick={handleClick("about")}>Om mig</a>
           <a href="#projects" onClick={handleClick("projects")}>Portfolio</a>
           <a href="#timeline" onClick={handleClick("timeline")}>Tidslinje</a>
@@ -74,6 +75,7 @@ const Header = () => {
 
       {menuOpen && (
         <div className="md:hidden bg-zinc-800 text-white px-6 py-4 space-y-4">
+          <a href="#landing" onClick={handleClick("landing")} className="block">Hem</a>
           <a href="#about" onClick={handleClick("about")} className="block">Om mig</a>
           <a href="#projects" onClick={handleClick("projects")} className="block">Portfolio</a>
           <a href="#timeline" onClick={handleClick("timeline")} className="block">Tidslinje</a>
