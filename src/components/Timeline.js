@@ -3,6 +3,26 @@ const timelineData = [
     category: "Tidslinje",
     items: [
       {
+        title: "Software Engineer Consultant — Skatteverket",
+        location: "Göteborg",
+        date: "Feb 2026 – Nuvarande",
+        employer: "Accelerate AB",
+        description: [
+          "Underhåller och vidareutvecklar legacy-applikationer byggda i C#, ASP och JavaScript med Telerik-ramverket.",
+          "Designar och implementerar mail-importers för att automatisera inläsning och bearbetning av inkommande e-postdata.",
+          "Utvecklar och optimerar komplexa SQL-funktioner och lagrade procedurer för affärskritiska dataoperationer.",
+          "Bygger dynamiska rapporter som ger intressenter korrekta och aktuella affärsinsikter.",
+          "Samarbetar nära med kunder för att säkerställa stabila, skalbara och väldokumenterade lösningar.",
+        ],
+        tech: ["C#", "ASP", "JavaScript", "Telerik", "SQL", "T-SQL"],
+        softSkills: [
+          "Kundsamarbete",
+          "Analytisk förmåga",
+          "Noggrannhet",
+          "Självständigt arbete"
+        ]
+      },
+      {
         title: "Full-Stack Web Engineer — Sleep Cycle AB",
         location: "Göteborg",
         date: "2025 – 2025",
