@@ -5,21 +5,25 @@ const timelineData = [
       {
         title: "Software Engineer Consultant — Skatteverket",
         location: "Göteborg",
-        date: "Feb 2026 – Nuvarande",
+        date: "Jan 2026 – Nuvarande",
         employer: "Accelerate AB",
         description: [
+          "Utvecklar enligt SAFe i Skatteverkets ärendehanteringssystem, med en uppgradering av Platina-plattformen med anpassningar och komponenter.",
           "Underhåller och vidareutvecklar legacy-applikationer byggda i C#, ASP och JavaScript med Telerik-ramverket.",
           "Designar och implementerar mail-importers för att automatisera inläsning och bearbetning av inkommande e-postdata.",
           "Utvecklar och optimerar komplexa SQL-funktioner och lagrade procedurer för affärskritiska dataoperationer.",
           "Bygger dynamiska rapporter som ger intressenter korrekta och aktuella affärsinsikter.",
+          "Utvecklar och underhåller React-applikationer, med återanvändbara komponenter integrerade mot backend-tjänster.",
+          "Hanterar support med felsökning och lösning av produktionsärenden.",
           "Samarbetar nära med kunder för att säkerställa stabila, skalbara och väldokumenterade lösningar.",
         ],
-        tech: ["C#", "ASP", "JavaScript", "Telerik", "SQL", "T-SQL"],
+        tech: ["C#", "ASP", "ASP.NET", "JavaScript", "React", "Telerik", "SQL", "T-SQL", "Git", "Azure DevOps"],
         softSkills: [
           "Kundsamarbete",
           "Analytisk förmåga",
           "Noggrannhet",
-          "Självständigt arbete"
+          "Självständigt arbete",
+          "Problemlösning"
         ]
       },
       {

@@ -2,15 +2,6 @@ import Card from "./Card";
 
 const projects = [
   {
-    title: "Bildsöknings App",
-    description:
-      "En applikation som låter användare söka efter bilder via Unsplash API. Resultaten visas i ett responsivt galleri med möjlighet att förstora bilder i ett modalfönster.",
-    techstack: "React.js, JavaScript, Unsplash API, CSS, Vercel",
-    getImageSrc: () => require("../images/GalleryApp.png"),
-    link: "https://gallery-api-seven.vercel.app/",
-    githubLinkFE: "https://github.com/VeronicaAndersen/Gallery"
-  },
-  {
     title: "Klättrings App",
     description:
       "En mobilanpassad tävlingsapp för klättringsevenemang som låter användare registrera sig, se topplistor, registrera resultat och följa tävlingen i realtid.",
@@ -19,6 +10,15 @@ const projects = [
     link: "https://grepp.vercel.app/",
     githubLinkFE: "https://github.com/VeronicaAndersen/boulder-beat-scoreboard",
     githubLinkBE: "https://github.com/VeronicaAndersen/ClimbAPI"
+  },
+  {
+    title: "Bildsöknings App",
+    description:
+      "En applikation som låter användare söka efter bilder via Unsplash API. Resultaten visas i ett responsivt galleri med möjlighet att förstora bilder i ett modalfönster.",
+    techstack: "React.js, JavaScript, Unsplash API, CSS, Vercel",
+    getImageSrc: () => require("../images/GalleryApp.png"),
+    link: "https://gallery-api-seven.vercel.app/",
+    githubLinkFE: "https://github.com/VeronicaAndersen/Gallery"
   },
   {
     title: "Cough Radar",
