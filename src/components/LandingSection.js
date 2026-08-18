@@ -20,12 +20,14 @@ const LandingSection = () => {
         Hej, Veronica här!
       </h1>
       <h2 className="text-2xl text-white mb-6">
-        Frontend Developer | System Developer | Full-Stack Web Engineer
+        System utvecklare | Full-Stack utvecklare | Frontend utvecklare
       </h2>
       <p className="max-w-2xl text-white mb-8">
-       Jag utvecklar responsiva och användarvänliga webbupplevelser med fokus på design, prestanda och tillgänglighet. 
-       Jag är resultatorienterad och strävar efter att leverera lösningar av hög kvalitet. 
-       Genom att vara öppen för feedback och kontinuerligt vidareutveckla min kompetens säkerställer jag att jag kan bidra med både tekniskt kunnande och långsiktig förbättring.
+        Jag är en fullstackutvecklare som älskar den kreativa sidan av problemlösning. Min resa började inom design och produktutveckling, med verktyg som Figma och Adobes program, vilket format hur jag idag angriper byggandet av användarcentrerade lösningar.
+      </p>
+
+      <p className="max-w-2xl text-white mb-8">
+        Det som engagerar mig mest är att sluta cirkeln, från att förstå affärsbehov till att leverera kod och supporta den i produktion. Jag drivs lika mycket av att optimera SQL-frågor som att skapa vackra React-gränssnitt. Jag lär mig ständigt nytt, tar certifieringar, utforskar nya ramverk och söker utmaningar som utvecklar mina färdigheter. Jag trivs i samarbetsmiljöer där tydlig kommunikation och genuin nyfikenhet är viktigt. Jag bryr mig djupt om att leverera stabil, väldokumenterad kod som löser verkliga problem. Utanför jobbet hittar du mig lärandes mig något nytt, utforskandes designverktyg eller funderandes på hur man kan göra teknik mer intuitiv.
       </p>
       <div className="flex gap-4">
         <a
