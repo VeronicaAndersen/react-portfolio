@@ -10,7 +10,7 @@ const LandingSection = () => {
     }
   };
   return (
-    <div className="h-screen flex flex-col justify-center items-center text-center px-6" id="landing">
+    <div className="h-fit flex flex-col justify-center items-center text-center px-6" id="landing">
       <img
         src={require("../images/Veronica.PNG")}
         alt="Veronica Andersen"
@@ -40,7 +40,7 @@ const LandingSection = () => {
         <a
           href="/Resume-Veronica-Andersen.pdf"
           download="Resume-Veronica-Andersen.pdf"
-          className="px-6 py-3 border border-white text-white rounded-lg shadow hover:bg-white hover:text-[#264d49] transition"
+          className="bg-[#264d49] px-6 py-3 border text-white rounded-lg shadow hover:bg-white hover:text-[#264d49] transition"
         >
           Ladda ner CV
         </a>

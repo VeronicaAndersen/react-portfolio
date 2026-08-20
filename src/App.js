@@ -10,7 +10,7 @@ function App() {
     <main className="bg-neutral-100 text-black">
       <Header />
       <div className="h-screen overflow-y-scroll ">
-        <section className="min-h-screen bg-[#60958f] pt-16 pb-16">
+        <section className="min-h-screen bg-[#60958f] pt-32 pb-16">
           <LandingSection />
         </section>
         <section className="min-h-screen bg-white pt-16 pb-16">
